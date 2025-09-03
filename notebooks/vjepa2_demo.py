@@ -63,7 +63,7 @@ def get_video():
     return video
 
 
-def forward_vjepa_video(model_hf, model_pt, hf_transform, pt_transform, device):
+def forward_vjepa_video(model_hf, model_pt, hf_transform, pt_transform, device="cuda"):
     # Run a sample inference with VJEPA
     with torch.inference_mode():
         # Read and pre-process the image
